@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,200&family=Roboto:wght@500;900&display=swap');
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;400;700&display=swap');
+/* font-family: 'Karla', sans-serif; */
+p{
+    font-family: 'Montserrat', sans-serif
+}
+
+
+/* CODIGO HEADER */
+
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* padding: 0.2rem 0; */
+    /* flex-wrap: wrap; */
+}
+
+@media (max-width: 700px) {
+    .main-header{
+        flex-direction: column;
+    }
+    header nav{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    header ul{
+      flex-direction: column;
+      
+      
+    }
+  }
+
+  
+  
+
+.title{
+    min-width: 250px;
+}
+
+.fixed-header {
+    background-color: #fff;
+    transition: all 0.3s ease;
+    border-bottom: solid 0.2rem rgba(180, 184, 151, 0.2);
+  }
+
+header li a{
+    color: black;
+    width: 100%;
+    padding-inline-start: 40px;
+
+}
+
+header .sigla a{
+    color: black;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+header ul li {
+    text-align: center;    
+}
+
+
+/* INICIO MAIN SECTION */
+.main-section{
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin: 0.1rem;
+    /* padding-bottom: 5rem; */
+    
+}
+
+@media (max-width: 700px) {
+    .main-section {
+      flex-direction: column;
+    }
+    .imagen img{
+        height: 220px;
+    }
+}
+ 
+.title{
+    display: flex;
+    align-content: center ;
+    flex-direction: column;
+    width: 40%;
+    height: 100vh;
+}
+
+.fondo{
+    display: flex;
+    width: 60%;
+    height: 100vh;
+    background-color: rgba(180, 184, 151, 0.2);
+    
+}
+
+.imagen img{
+    height: 550px;
+}
+
+
+.name{
+    -webkit-text-stroke: 2px #787A91;  
+    color: transparent;
+    padding-top: 6rem;
+}
+
+.sub-title{
+    font-family: "montserrat";
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+.title {
+    font-family: "roboto";
+    font-weight: 500;
+    font-size: 5rem;
+}
+
+/* CODIGO SECCION ABOUT */
+
+.about- section{
+    height: 100%;
+    width: 100%;
+    display: flex; 
+    margin: 1rem;
+    background-size: cover;
+    padding-top: 2rem;
+}
+
+@media (max-width: 700px) {
+    .about-section {
+      flex-direction: column;
+    }
+}
+
+
+.container-about {
+    display: flex;
+    height: 70%;
+    width: 100%;
+    flex-direction: row;
+    /* background-color: teal; */
+}
+
+.a-info {
+    display: flex;
+    width: 60%;
+    padding: 1rem;
+    flex-direction: column;
+}
+
+.a-info p{
+    font-family: "Karla", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 200;
+    box-sizing: border-box;
+    /* padding-top: 2rem; */
+    padding-bottom: 1rem;
+    margin-right: 5rem;
+}
+
+.text-about {
+    top: 0;
+    left: 0%;
+    margin-bottom: -4rem;
+     -webkit-text-stroke: 1px rgba(238, 238, 238, 0.7);  
+     font-family: "Roboto";
+     font-size: 7rem;
+     font-weight: 500;
+     color: transparent;
+}
+
+.about-title{
+    font-size: 3rem;
+    font-family: "Roboto";
+    font-weight: 900;
+    padding-top: 0;
+    padding-bottom: 2rem;
+    display:inline-block;   
+}
+
+.sub-sub {
+    height: 2rem;
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
+
+
+}
+
+
+.about-buton{
+    padding-top: 3rem;
+}
+
+.img-about {
+    display: flex;
+    width: 40%;
+    padding: 0.5rem;
+    align-items: center;
+    justify-content: center;
+
+}
+.img-about img{
+    display: flex;
+    width: 80%;
+    
+}
+
+.learn-more{
+    padding: 0.5rem;
+    background-color: black;
+    color: white;
+    border: 1px solid #000;
+    /* margin-top: 10rem; */
+    
+
+
+}
+
+.learn-more:hover {
+    transition: 0.5s ease;
+    background-color: white;
+    color: #000;
+    border: 1px solid #000;
+}
+
+.container-sub{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.sub-about {
+    display: flex;
+        height: 15%;
+    width: 70%;
+    padding: 1rem;
+    
+    
+}
+
+.sub-about div{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.sub-about h3{
+    font-family: "Roboto";
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+.sub-about p {
+    font-family: "Karla", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 200;
+    box-sizing: border-box;
+}
+
+/* SECCION PORTAFOLIO */
+
+.protfolio-section{
+    background-color: rgba(180, 184, 151, 0.2);
+    padding: 3rem;
+
+}
+
+.text-portfolio {
+    top: 0;
+    left: 0%;
+    margin-bottom: -4rem;
+     -webkit-text-stroke: 1px rgba(128, 128, 128, 0.2);  
+     font-family: "Roboto";
+     font-size: 7rem;
+     font-weight: 500;
+     color: transparent;
+}
+
+.title-port{
+    font-size: 3rem;
+    font-family: "Roboto";
+    font-weight: 900;
+    padding-top: 0;
+    padding-bottom: 2rem;
+    display:inline-block;   
+}
+
+.img-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img-container img{
+    padding: 1rem;
+    height: 230px;
+}
+
+/* SECTION CONTACT */
+
+.contact-section{
+    /* background-color: rgba(180, 184, 151, 0.2); */
+    padding: 3rem;
+
+}
+
+.text-contact {
+    top: 0;
+    left: 0%;
+    margin-bottom: -4rem;
+     -webkit-text-stroke: 1px rgba(128, 128, 128, 0.2);  
+     font-family: "Roboto";
+     font-size: 7rem;
+     font-weight: 500;
+     color: transparent;
+}
+
+.contact-title{
+    font-size: 3rem;
+    font-family: "Roboto";
+    font-weight: 900;
+    padding-top: 0;
+    padding-bottom: 2rem;
+    display:inline-block;   
+}
+
+.datos-contact p{
+    font-family: "Karla", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 200;
+    box-sizing: border-box;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+}
+
+.datos-contact input{
+    margin-bottom: 2rem;
+    width: 100%;
+    min-width: auto;
+    box-sizing: border-box;
+    height: 40px;
+}
+
+textarea{
+    width: 100%;
+    height: 100px;
+}
