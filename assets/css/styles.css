@@ -11,31 +11,49 @@ p{
 /* CODIGO HEADER */
 
 header{
-    width: 100%;
+    display: flex;
     position: fixed;
-    top: 0;
-    left: 0;
-    /* padding: 0.2rem 0; */
-    /* flex-wrap: wrap; */
+    width: 100%;
+    
 }
 
-@media (max-width: 700px) {
-    .main-header{
+@media (max-width: 750px){
+    header{
+        position: fixed;
         flex-direction: column;
+        width: 100%;
+
+    }
+    .sigla a:hover{
+        nav ul li{
+            transition: all 0.3s ease;
+            display: flex;
+        }
     }
     header nav{
         flex-direction: column;
-        justify-content: flex-start;
-    }
-    header ul{
-      flex-direction: column;
-      
-      
-    }
-  }
+        width: 100%;
+        height: 30%;
+        /* background-color: brown; */
 
-  
-  
+        
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        /* justify-content: flex-start; */
+        /* background-color: blue; */
+        width: 5%;
+        height: 100%;
+    }
+    
+    nav ul li{
+        display: none;
+
+    }
+    
+}
 
 .title{
     min-width: 250px;
@@ -60,6 +78,7 @@ header .sigla a{
     font-weight: bold;
 }
 
+
 header ul li {
     text-align: center;    
 }
@@ -77,13 +96,15 @@ header ul li {
     
 }
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
     .main-section {
+        width: 100%;
       flex-direction: column;
     }
     .imagen img{
         height: 220px;
     }
+    
 }
  
 .title{
@@ -99,11 +120,20 @@ header ul li {
     width: 60%;
     height: 100vh;
     background-color: rgba(180, 184, 151, 0.2);
+    overflow: hidden;
+}
+
+
+
+.imagen {
+    height: 90%;
+    align-items: center;
+    overflow: hidden;
     
 }
 
 .imagen img{
-    height: 550px;
+    height: 100%;
 }
 
 
@@ -136,10 +166,33 @@ header ul li {
     padding-top: 2rem;
 }
 
-@media (max-width: 700px) {
-    .about-section {
-      flex-direction: column;
+@media (max-width: 750px) {
+    
+    .about-section{
+        width: 100%;
     }
+    .about-section div {
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .title {
+        width: 100%;
+        align-items: center;
+        height: 50%;
+        padding-bottom: 5rem;
+    }
+
+.sub-about {
+    flex-direction: column;
+}
+
+.sub-about div{
+    justify-content: space-between;
+    align-items: center;
+
+}
+    
 }
 
 
@@ -277,6 +330,20 @@ header ul li {
 
 }
 
+@media (max-width: 750px) {
+    .img-container{
+        flex-direction: column;
+        align-items: center;
+        justify-content:space-between;
+        height: 12.5%;
+        width: 100%;
+        
+    }
+    .img-container img{
+        height: 30%;
+        width: 100%;
+    }
+}
 .text-portfolio {
     top: 0;
     left: 0%;
@@ -356,4 +423,26 @@ header ul li {
 textarea{
     width: 100%;
     height: 100px;
+}
+
+.contact-buton input{
+    padding: 0.5rem;
+    background-color: black;
+    color: white;
+    border: 1px solid #000;
+    /* margin-top: 10rem; */
+
+}
+
+.contact-buton input:hover {
+    transition: 0.5s ease;
+    background-color: white;
+    color: #000;
+    border: 1px solid #000;
+}
+
+@media (max-width: 750px) {
+    .contact-section div{
+        width: 100%;
+    }
 }

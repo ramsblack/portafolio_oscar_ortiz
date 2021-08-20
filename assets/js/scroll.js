@@ -6,8 +6,7 @@ function scrollHeaderTop() {
   } else if (window.scrollY === 0) {
     header.classList.remove("fixed-header");
   }
-
-  if (window.scrollY > offsetAbout) {
+  if (document.scrollY > offsetAbout){
     about.style.opacity = "1";
   }
 }

@@ -19,10 +19,10 @@
   
         <ul class="d-flex col-6 justify-between aling-center">
             <li class="col-2"><a href="#main-section">Home</a></li>
-            <li class="col-2"><a href="#about">About</a></li>
+            <li class="col-2"><a href="#about-section">About</a></li>
             <li class="col-2"><a href="#">Portfolio</a></li>
-            <li class="col-2"><a href="#">Testimonail</a></li>
-            <li class="col-2"><a href="#">News</a></li>
+            <!-- <li class="col-2"><a href="#">Testimonail</a></li>
+            <li class="col-2"><a href="#">News</a></li> -->
             <li class="col-2"><a href="#">Contact</a></li>
  
         </ul>
@@ -124,7 +124,7 @@
         </div>
 
     </section>
-    <section class="contact-section">
+    <section id="main-contact" class="contact-section">
         <div class="container">
             <div class="contact-title">
                 <h2 class="text-contact">CONTACT</h2>
@@ -134,14 +134,15 @@
                 <p>Please fill out the form on this section to contact with me. 
                 Or call between 9:00 a.m. and 8:00 p.m. ET, Monday through Friday
                 </p>
-                <input type="text" placeholder="Name" autocomplete="off">
-                <input type="text" placeholder="Mail" autocomplete="off"> 
-                <textarea placeholder="Messaje"></textarea>      
+                <input id="nombre" type="text" placeholder="Escriba su nombre" autocomplete="off">
+                <input id="email" type="text" placeholder="Escriba su mail" autocomplete="off"> 
+                <textarea id="mensaje" placeholder="Messaje"></textarea>      
             </div>
-            <div class="about-buton">
-                <a href="#" class="learn-more">Send Messaje</a>
+            <div class="contact-buton">
+                <input type="submit" value="Guardar"> 
            </div>
     </section>
     <script src="assets/js/scroll.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
