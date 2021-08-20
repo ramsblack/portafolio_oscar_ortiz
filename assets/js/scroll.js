@@ -1,4 +1,7 @@
 const header = document.getElementById("main-header");
+const home = document.getElementById("home")
+
+
 
 function scrollHeaderTop() {
   if(window.scrollY > 350) {
@@ -10,6 +13,7 @@ function scrollHeaderTop() {
     about.style.opacity = "1";
   }
 }
+
 
 
 

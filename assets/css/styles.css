@@ -24,12 +24,7 @@ header{
         width: 100%;
 
     }
-    .sigla a:hover{
-        nav ul li{
-            transition: all 0.3s ease;
-            display: flex;
-        }
-    }
+    
     header nav{
         flex-direction: column;
         width: 100%;
@@ -144,12 +139,14 @@ header ul li {
 }
 
 .sub-title{
-    font-family: "montserrat";
-    font-size: 1.5rem;
+    font-family: "Roboto";
+    font-size: 3.5rem;
     font-weight: 200;
+    border-bottom: rgba(128, 128, 128, 0.2);
 }
 
 .title {
+    padding-left: 2rem;
     font-family: "roboto";
     font-weight: 500;
     font-size: 5rem;
